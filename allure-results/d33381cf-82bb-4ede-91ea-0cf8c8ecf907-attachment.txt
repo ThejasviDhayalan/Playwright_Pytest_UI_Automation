@@ -1,0 +1,2 @@
+Product count verified: 2
+Product names verified: ['Sleeves Printed Top - White', 'Colour Blocked Shirt – Sky Blue']

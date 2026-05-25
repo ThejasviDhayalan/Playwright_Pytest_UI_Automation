@@ -1,0 +1,16 @@
+{
+  "invalid_users" :
+  [
+    {
+      "invalid_user_email" : "invaliduserone@gmail.com",
+      "invalid_user_password" : "pwd@123_2026",
+      "invalid_user_name" : "UserOne"
+    },
+    {
+      "invalid_user_email" : "invalidusertwo@gmail.com",
+      "invalid_user_password" : "pwd@123_2026",
+      "invalid_user_name" : "UserTwo"
+    }
+  ]
+}
+

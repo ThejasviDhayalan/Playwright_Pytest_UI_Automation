@@ -1,0 +1,48 @@
+Playwright-Pytest-Framework/
+|
+├── tests/                                # UI test cases using Playwright + 
+│   ├── test_01_user_registration.py
+│   ├── test_02_order_placement.py
+│   ├── test_03_contact_form_submission.py
+│   ├── test_04_newsletter_subscription.py
+│   └── test_05_invalid_user_login.py
+│
+├── features/                             # BDD feature files (Gherkin syntax)
+│   ├── order_placement.feature
+│   └── newsletter_subscription.feature
+│
+├── step_definitions/                     # Step definitions for BDD scenarios
+│   ├── order_placement_steps.py
+│   └── newsletter_subscription_steps.py
+│
+├── pages/                               # Page Object Model classes
+│   ├── signup_page.py
+│   ├── login_page.py
+│   ├── home_page.py
+│   ├── products_page.py
+│   ├── cart_page.py
+│   ├── checkout_page.py
+│   ├── payment_page.py
+│   ├── contact_page.py
+│   └── common_page.py
+│
+├── data/                               # External test data
+│   ├── user_login.json
+│   ├── invalid_user_login.json
+│   ├── payment.json
+│   ├── test_data.xlsx
+│   └── contact_form.txt
+│
+├── utils/                              # Reusable utility/helper modules
+│   └── screenshot.py
+|
+├── screenshots/                        # Failure screenshots
+│
+├── traces/                             # Playwright trace files
+│
+├── reports/                            # Allure/HTML reports
+│
+├── pytest.ini                          # Pytest configurations
+├── README.md                           # Project documentation
+└── conftest.py                         # Shared fixtures and hooks
+
