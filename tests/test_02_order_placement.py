@@ -72,10 +72,9 @@ def test_02_order_placement(browser_instance, user_credentials, payment_data):
     common_page_object = CommonPage(browser_instance)
     common_page_object.proceed_to_checkout()
 
-    # Step 5: Verify checkout details (only if user is logged in)
-    if expect(browser_instance.get_by_text(f"Logged in as {user_name}")).to_be_visible():
-        checkout_page_object = CheckoutPage(browser_instance)
-        checkout_page_object.verify_total_price()
+    # Step 5: Verify checkout details
+    checkout_page_object = CheckoutPage(browser_instance)
+    checkout_page_object.verify_total_price()
 
     # Step 6: Place the order
     common_page_object.place_order()
